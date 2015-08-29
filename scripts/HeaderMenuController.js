@@ -10,6 +10,7 @@
   function HeaderController ($scope, $location) {
     $scope.menuClass = function(page) {
       var current = $location.path().substring(1);
+	  if (current === "") { current = "home"; }
 	  return page === current ? 'active' : ''
     }
   };
