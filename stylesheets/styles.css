@@ -14,23 +14,25 @@ a {
 
 header {
   border-bottom: white 1px solid;
-  margin-left: 50px;
   height: 150px;
 }
 
 header .logo {
-  display: inline-block;
-  height: 100%;
+  width: 150px;
+  height: 150px;
 }
 
 .menu {
-  display: inline-block;
+  display: flex;
+  padding: 0;
 }
 
 .menu li {
   float: right;
-  display: inline-block;
-  padding: 15px 50px;
+  display: flex;
+  width: 20%;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .menu li.active a {
@@ -40,10 +42,18 @@ header .logo {
 .menu li a {
   text-decoration: none;
   font-size: 1em;
+  padding-bottom: 15px;
 }
 
 .alphawolf-img {
   float: left;
+  width: 200px;
+}
+
+@media screen and (max-width: 640px) {
+  .alphawolf-img {
+    display: none;
+  }
 }
 
 /* Main page */
