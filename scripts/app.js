@@ -15,7 +15,7 @@
 			  return 'views/Calendar.html';
 			}
 		  })
-		  .when('/home', {
+		  .otherwise({
 		    templateUrl: function() {
 			  return 'views/Home.html';
 			}
