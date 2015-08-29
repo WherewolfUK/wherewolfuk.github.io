@@ -1,36 +1,28 @@
 <!doctype html>
-<html>
+<html ng-app="WherewolfApp">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Wherewolf UK</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-route.min.js"></script>
+	<script type="text/javascript" src="scripts/app.js"></script>
+	<script type="text/javascript" src="scripts/HeaderMenuController.js"></script>
+    <link rel="stylesheet" href="stylesheets/styles.css"></link>
   </head>
   <body>
-      <div id="header">
-        <nav>
-          <li class="left"><a href="#">Wherewolf</a></li>
-          <li class="right"><a href="#">Forums</a></li>
-          <li class="right"><a href="http://wherewolf.wikia.com">Wiki</a></li>
-          <li class="right"><a href="#">Groups</a></li>
-        </nav>
-      </div><!-- end header -->
-
-    <div class="wrapper">
-
-      <section>
-        <div id="title">
-          <h1>Wherewolf UK</h1>
-          <p>Home of the UK Wherewolf group page</p>
-          <hr>
-        </div>
-        <p>
-		  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </section>
-    </div>	  
+  <img src="img/AlphaWolf.png" class="alphawolf-img"/>
+  <header ng-controller="HeaderController">
+    <ul class="menu">
+      <li><img class="logo" src="img/logo.jpg" /></li>
+	  <li ng-class="menuClass('home')"><a href="#home">Home</a></li>
+	  <li ng-class="menuClass('about')"><a href="#about">About us</a></li>
+	  <li ng-class="menuClass('calendar')"><a href="#calendar">Calendar</a></li>
+	  <li><a href="http://wherewolf.wikia.com" target="_blank">Wiki</a></li>
+	</ul>
+  </header>
+  
+  <div class="content">
+    <div ng-view></div>
+  </div>
   </body>
 </html>
