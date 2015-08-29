@@ -2,6 +2,12 @@ body {
   background: black;
   font-family: tahoma, sans serif;
   font-size: 16pt;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 /* Header */
@@ -32,11 +38,21 @@ header .logo {
 }
 
 .menu li a {
-  color: white;
   text-decoration: none;
   font-size: 1em;
 }
 
 .alphawolf-img {
   float: left;
+}
+
+/* Main page */
+
+.content {
+  margin-left: 500px;
+  margin-right: 100px;
+}
+
+.content div {
+  min-height: 1em;
 }
