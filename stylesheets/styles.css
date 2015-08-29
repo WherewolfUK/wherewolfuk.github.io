@@ -10,11 +10,16 @@ a {
   text-decoration: none;
 }
 
+h3 {
+  text-decoration: underline;
+}
+
 /* Header */
 
 header {
   border-bottom: white 1px solid;
   height: 150px;
+  margin-bottom: 20px;
 }
 
 header .logo {
@@ -67,6 +72,15 @@ header .logo {
   min-height: 1em;
 }
 
+.roles {
+  text-align: center;
+}
+
+.role {
+  max-width: 200px;
+  margin: 15px 30px;
+}
+
 /* About page */
 .about hr {
   clear: both;
@@ -75,10 +89,6 @@ header .logo {
   height: 1px;
   background: #888;
   margin-top: 30px;
-}
-
-.about h3 {
-  text-decoration: underline;
 }
 
 .about .group-img {
