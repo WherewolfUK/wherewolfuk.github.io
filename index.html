@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Wherewolf UK</title>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-route.min.js"></script>
 	<script type="text/javascript" src="scripts/app.js"></script>
 	<script type="text/javascript" src="scripts/HeaderMenuController.js"></script>
     <link rel="stylesheet" href="stylesheets/styles.css"></link>
@@ -15,9 +16,11 @@
     <ul class="menu">
 	  <li ng-class="menuClass('wiki')"><a href="#wiki">Wiki</a></li>
 	  <li ng-class="menuClass('calendar')"><a href="#calendar">Calendar</a></li>
-	  <li ng-class="menuClass('about')"><a href="#about">About Us</a></li>
+	  <li ng-class="menuClass('about')"><a href="#about">About us</a></li>
 	  <li ng-class="menuClass('home')"><a href="#home">Home</a></li>
 	</ul>
   </header>
+  
+  <div ng-view></div>
   </body>
 </html>

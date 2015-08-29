@@ -9,11 +9,12 @@ body {
 header {
   border-bottom: white 1px solid;
   margin-left: 50px;
+  height: 150px;
 }
 
 header .logo {
-  max-height: 150px;
   display: inline-block;
+  height: 100%;
 }
 
 .menu {
@@ -23,7 +24,7 @@ header .logo {
 .menu li {
   float: right;
   display: inline-block;
-  padding: 15px 30px;
+  padding: 15px 50px;
 }
 
 .menu li.active a {
