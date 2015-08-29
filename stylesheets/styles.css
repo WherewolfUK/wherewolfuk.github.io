@@ -1,3 +1,41 @@
-.active {
-  color: red;
+body {
+  background: black;
+  font-family: tahoma, sans serif;
+  font-size: 16pt;
+}
+
+/* Header */
+
+header {
+  border-bottom: white 1px solid;
+  margin-left: 50px;
+}
+
+header .logo {
+  max-height: 150px;
+  display: inline-block;
+}
+
+.menu {
+  display: inline-block;
+}
+
+.menu li {
+  float: right;
+  display: inline-block;
+  padding: 15px 30px;
+}
+
+.menu li.active a {
+  color: #8B2323;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.alphawolf-img {
+  float: left;
 }
