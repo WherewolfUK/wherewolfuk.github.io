@@ -6,7 +6,7 @@ body {
 }
 
 a {
-  color: white;
+  color: #8B2323;
   text-decoration: none;
 }
 
@@ -36,7 +36,7 @@ header .logo {
 }
 
 .menu li.active a {
-  color: #8B2323;
+  color: white;
 }
 
 .menu li a {
@@ -59,10 +59,35 @@ header .logo {
 /* Main page */
 
 .content {
-  margin-left: 500px;
+  margin-left: 300px;
   margin-right: 100px;
 }
 
 .content div {
   min-height: 1em;
+}
+
+/* About page */
+.about hr {
+  clear: both;
+  width: 200px;
+  border: 0;
+  height: 1px;
+  background: #888;
+  margin-top: 30px;
+}
+
+.about h3 {
+  text-decoration: underline;
+}
+
+.about .group-img {
+  float: right;
+  max-width: 400px;
+  max-height: 200px;
+  margin-bottom: 30px;
+}
+
+.about .group-desc {
+  margin-right: 400px;
 }
